@@ -11,9 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151001164613) do
+ActiveRecord::Schema.define(version: 20151001165008) do
 
-  create_table "titles", force: :cascade do |t|
+  create_table "requests", force: :cascade do |t|
+    t.string   "title"
     t.string   "userid"
     t.string   "username"
     t.integer  "state"

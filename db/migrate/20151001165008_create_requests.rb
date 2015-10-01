@@ -1,6 +1,7 @@
-class CreateTitles < ActiveRecord::Migration
+class CreateRequests < ActiveRecord::Migration
   def change
-    create_table :titles do |t|
+    create_table :requests do |t|
+      t.string :title
       t.string :userid
       t.string :username
       t.integer :state
